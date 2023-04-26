@@ -12,13 +12,6 @@ export default function PhaserContainer() {
 
     return () => {
       window.location.reload(false);
-      const phaserCanvas = document.querySelector("canvas");
-      if (phaserCanvas) {
-        phaserCanvas.parentNode.removeChild(phaserCanvas);
-      }
-
-      console.log("unmounted");
-      head.removeChild(script);
     };
   }, []);
 
