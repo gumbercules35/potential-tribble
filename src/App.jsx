@@ -3,12 +3,10 @@ import PhaserContainer from "./PhaserContainer";
 import { Routes, Route, Link } from "react-router-dom";
 
 function App() {
-  const [toggle, setToggle] = useState(true);
-  console.log("🚀 ~ file: App.jsx:6 ~ true:", toggle);
   return (
     <Routes>
       <Route
-        path="/home"
+        path="/"
         element={
           <div>
             <h2>Hello</h2>

@@ -17,7 +17,7 @@ export default function PhaserContainer() {
 
   return (
     <div>
-      <Link to="/home">Go Home</Link>
+      <Link to="/">Go Home</Link>
     </div>
   );
 }
