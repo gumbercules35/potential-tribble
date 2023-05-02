@@ -6,11 +6,13 @@ export default function PhaserContainer() {
     const head = document.querySelector("head");
     const script = document.createElement("script");
 
-    script.setAttribute("src", "../public/PhaserGame.js");
+    script.setAttribute("src", "../public/main.js");
     script.setAttribute("type", "module");
     head.appendChild(script);
 
     return () => {
+      console.log("unmounted");
+
       window.location.reload(false);
     };
   }, []);
